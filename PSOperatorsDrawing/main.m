@@ -7,7 +7,6 @@
 
 /* File: main.m */
 #import <Cocoa/Cocoa.h>
-#import "PSOperators.h"
 #import "PolyhedraViewWraps.h"
 
 void drawShapesExample(void) {
