@@ -5,6 +5,7 @@
 //  Created by Gregory John Casamento on 4/4/25.
 //
 
+#ifndef GNUSTEP
 #import "PSOperators.h"
 
 static NSColor *_currentStrokeColor = nil;
@@ -69,3 +70,4 @@ void PSstroke(void)
     [_currentPath stroke];
     _currentPath = nil;
 }
+#endif

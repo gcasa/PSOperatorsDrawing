@@ -24,8 +24,11 @@
 */
 
 // translated from the pswraps for GNUstep/MOSX by Gregory John Casamento
-
+#ifndef GNUSTEP
 #import "PSOperators.h"
+#else
+#import <AppKit/PSOperators.h>
+#endif
 
 void colourTriangle(float x1,
             float y1,
