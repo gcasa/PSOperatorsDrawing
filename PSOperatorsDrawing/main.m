@@ -35,21 +35,7 @@ void drawShapesExample(void) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSApplication *app = [NSApplication sharedApplication];
-
-        NSRect frame = NSMakeRect(0, 0, 600, 300);
-        NSUInteger style = NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskResizable;
-        NSWindow *window = [[NSWindow alloc] initWithContentRect:frame
-                                                       styleMask:style
-                                                         backing:NSBackingStoreBuffered
-                                                           defer:NO];
-        [window setTitle:@"PSOperators Drawing Example"];
-
-        DrawingView *view = [[DrawingView alloc] initWithFrame:frame];
-        [window setContentView:view];
-        [window makeKeyAndOrderFront:nil];
-
-        [app run];
+        // Setup code that might create autoreleased objects goes here.
     }
-    return 0;
+    return NSApplicationMain(argc, argv);
 }
